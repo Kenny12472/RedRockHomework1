@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Logo */
+        .logo {
+            margin-top: 100px;
+        }
+
+        .logo img {
+            width: 270px;
+        }
+
+        /* 搜索栏 */
+        .search-bar {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 500px;
+            height: 40px;
+            padding: 0 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            height: 40px;
+            width: 100px;
+            font-size: 16px;
+            background-color: #3385ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2a75d9;
+        }
+
+        /* 页脚 */
+        .footer {
+            margin-top: 100px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer p {
+            margin-top: 10px;
+        }
+
+        /* 二维码 */
+        .qr-code {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .qr-code img {
+            width: 120px;
+            margin-top: 10px;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .top-right a {
+            color: #333;
+            /* text-decoration: none; */
+            margin-left: 10px;
+        }
+
+        .top-right a:hover {
+            text-decoration: underline;
+        }
+
+        #more-products {
+            background-color: #3385ff;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        #more-products:hover {
+            background-color: #2877dc;
+        }
+
+        .you {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-right">
+        <a href="#">新闻</a>
+        <a href="#">hao123</a>
+        <a href="#">地图</a>
+        <a href="#">视频</a>
+        <a href="#">贴吧</a>
+        <a href="#">学术</a>
+        <a href="#">登录</a>
+        <a href="#">设置</a>
+        <a href="#" id="more-products">更多产品</a>
+    </div>
+
+    <div class="container">
+        <!-- 百度 Logo -->
+        <div class="logo">
+            <img src="https://www.baidu.com/img/bd_logo1.png">
+        </div>
+
+        <!-- 搜索栏 -->
+        <div class="search-bar">
+            <input type="text" placeholder="请输入搜索内容">
+            <input type="submit" value="百度一下">
+        </div>
+
+        <!-- 二维码 -->
+        <div class="qr-code">
+            <img src="./二维码.jpg">
+            <p>下载百度APP</p>
+            <!-- <p color: #666;>有事搜一搜，没事看一看</p> -->
+        </div>
+        <div class="you">
+            <p>有事搜一搜，没事看一看</p>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer">
+            <a href="#">把百度设为首页</a> |
+            <a href="#">关于百度</a> |
+            <a href="#">About Baidu</a> |
+            <a href="#">百度推广</a>
+            <p>©2019 Baidu 使用百度前必读 意见反馈 京ICP证xxxxxx号 京公网安备xxxx号</p>
+        </div>
+    </div>
+</body>
+
+</html>
