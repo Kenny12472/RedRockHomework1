@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover Effect</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background-color: #1f2937;
+            color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #a3bffa;
+            color: #1f2937;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .button:hover {
+            transform: scale(0.95);
+            background-color: #7b93f0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="./校徽.jpg" width="150" height="150">
+        <h2>重庆邮电大学简介</h2>
+        <p>工业和信息化部 重庆市人民政府共建高校</p>
+        <p>国家“中西部高等教育振兴计划”支持高校</p>
+        <p>教育部“卓越工程师教育培养计划”实施高校</p>
+        <p>国家技术发明奖、国家科技进步奖、国家教学成果奖</p>
+        <button class="button">立即入学</button>
+    </div>
+</body>
+
+</html>
